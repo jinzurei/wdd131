@@ -1,4 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap');
+main {
+	display: block;
+	width: 100%;
+	background: transparent;
+	margin: 0 auto;
+	padding: 0;
+	min-height: 1px;
+}
+footer {
+	width: 100%;
+	background: var(--footer-bg);
+	color: #232323;
+	text-align: center;
+	font-size: 1.05rem;
+	padding: 0.6rem 0 0.4rem 0;
+	margin-top: 1.2rem;
+	font-family: 'Roboto', Arial, sans-serif;
+	letter-spacing: 0.01em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: normal;
+}
 
 /* ===== CSS Reset ===== */
 html, body {
@@ -43,6 +66,7 @@ body {
 	color: #222;
 	min-height: 100vh;
 }
+#course-title,
 header .brand > span {
 	display: block;
 	text-align: center;
@@ -51,59 +75,19 @@ header .brand > span {
 	font-size: 2.1rem;
 	letter-spacing: 1px;
 	padding: 1.2rem 0 1.2rem 0;
-	color: var(--header-text);
+	color: #232323;
 	background: none;
 	width: auto;
 	margin-left: 0;
 }
 
-#course-title {
-  display: block;
-  text-align: center;
-}
 html, body {
 	margin: 0 !important;
 	padding: 0 !important;
 	border: none !important;
 	box-shadow: none !important;
 }
-header {
-	background: var(--header-bg);
-	margin: 0 !important;
-	padding: 0 !important;
-	border: none !important;
-	box-shadow: none !important;
-	position: relative;
-	top: 0;
-	left: 0;
-}
 
-	body {
-header {
-	background: var(--header-bg);
-	margin: 0;
-	padding: 0;
-}
-		font-family: 'Roboto', Arial, sans-serif;
-		background: var(--primary-bg);
-		color: #222;
-		margin: 0;
-		min-height: 100vh;
-	}
-
-	header .brand > span {
-		display: block;
-		text-align: center;
-		font-family: 'Montserrat', Arial, sans-serif;
-		font-weight: 700;
-		font-size: 2.1rem;
-		letter-spacing: 1px;
-		padding: 1.2rem 0 1.2rem 0;
-		color: var(--header-text);
-	background: none;
-	width: auto;
-	margin-left: 0;
-	}
 
 	nav.primary {
 			width: 100vw;
@@ -129,15 +113,15 @@ header {
 			height: 100%;
 	}
 	nav.primary a {
-			color: var(--nav-link);
+			color: #fff;
 			text-decoration: none;
 			font-weight: 700;
 				font-size: 1.05rem;
-				padding: 1.3rem 0 0.7rem 0;
+				/* padding: 1.3rem 0 0.7rem 0; -- removed duplicate */
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-			padding: 0 1.5rem;
+				padding: 0 1.5rem;
 			border-radius: 0;
 			background: none;
 			position: relative;
@@ -285,20 +269,20 @@ header {
 		color: var(--nav-link-hover);
 	}
 	footer.site {
-	width: 100%;
-	background: var(--footer-bg);
-	color: var(--footer-text);
-	text-align: center;
-	font-size: 1.05rem;
-	padding: 0.6rem 0 0.4rem 0;
-	margin-top: 1.2rem;
-	font-family: 'Roboto', Arial, sans-serif;
-	letter-spacing: 0.01em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	line-height: normal;
+		width: 100%;
+		background: var(--footer-bg);
+		color: #232323;
+		text-align: center;
+		font-size: 1.05rem;
+		padding: 0.6rem 0 0.4rem 0;
+		margin-top: 1.2rem;
+		font-family: 'Roboto', Arial, sans-serif;
+		letter-spacing: 0.01em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		line-height: normal;
 	}
 footer.site p {
 	margin: 0;
