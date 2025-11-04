@@ -1,43 +1,15 @@
-main {
-	display: block;
-	width: 100%;
-	background: transparent;
-	margin: 0 auto;
-	padding: 0;
-	min-height: 1px;
-}
-footer {
-	width: 100%;
-	background: var(--footer-bg);
-	color: #232323;
-	text-align: center;
-	font-size: 1.05rem;
-	padding: 0.6rem 0 0.4rem 0;
-	margin-top: 1.2rem;
-	font-family: 'Roboto', Arial, sans-serif;
-	letter-spacing: 0.01em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	line-height: normal;
-}
-
-/* ===== CSS Reset ===== */
-html, body {
-	margin: 0 !important;
-	padding: 0 !important;
-	border: none !important;
-	box-shadow: none !important;
-}
 header {
 	background: var(--header-bg);
-	margin: 0 !important;
-	padding: 0 !important;
-	border: none !important;
-	box-shadow: none !important;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-shadow: none;
 	position: relative;
 	top: 0;
+	left: 0;
+}
+main {
+	display: block;
 	left: 0;
 }
 /* ===== Color Variables ===== */
@@ -113,23 +85,25 @@ html, body {
 			height: 100%;
 	}
 	nav.primary a {
-			color: #fff;
-			text-decoration: none;
-			font-weight: 700;
-				font-size: 1.05rem;
-				/* padding: 1.3rem 0 0.7rem 0; -- removed duplicate */
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				padding: 0 1.5rem;
-			border-radius: 0;
-			background: none;
-			position: relative;
-			font-family: 'Montserrat', Arial, sans-serif;
-			transition: color 0.2s;
-			display: flex;
-			align-items: center;
-			height: 100%;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1.05rem;
+		/* padding: 1.3rem 0 0.7rem 0; -- removed duplicate */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 1.5rem;
+		border-radius: 0;
+		background: none;
+		position: relative;
+		font-family: 'Montserrat', Arial, sans-serif;
+		transition: color 0.2s;
+		align-items: center;
+		height: 100%;
+	}
+	nav.primary {
+		background: #232323;
 	}
 	nav.primary a:hover,
 	nav.primary a:focus-visible {
@@ -173,7 +147,7 @@ html, body {
 	}
 	.card .card-header {
 		background: var(--card-header-bg);
-		color: var(--card-header-text);
+		color: #232323;
 		font-family: 'Montserrat', Arial, sans-serif;
 		font-size: 1.15rem;
 		font-weight: 700;
