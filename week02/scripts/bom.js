@@ -1,5 +1,5 @@
 // Declare three variables that hold references to the input, button, and list elements
-const input = document.querySelector('#favchap');
+const input = document.querySelector('#favchap'); // favorite chapter input field
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
