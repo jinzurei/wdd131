@@ -79,9 +79,10 @@ nav a:hover {
 }
 
 nav a.active {
-    color: #ffeb3b;
+    color: #ffffff;
     font-weight: 600;
-    background-color: rgba(255, 235, 59, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #ffeb3b;
 }
 
 nav ul li:last-child a {
