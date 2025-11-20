@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Cliffs Desert - Saint George, Utah</title>
+    <meta name="description" content="Explore the stunning Red Cliffs Desert near Saint George, Utah. Learn about local wildlife including the Gila Monster and discover this unique desert ecosystem.">
+    <link rel="stylesheet" href="styles/places.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <!-- Header with title -->
+    <header>
+        <h1>Red Cliffs Desert</h1>
+    </header>
+    
+    <!-- Main hero section with background image -->
+    <main class="hero-section">
+        <!-- Responsive background images -->
+        <picture class="hero-image">
+            <source media="(min-width: 800px)" srcset="images/gila-large.webp">
+            <img src="images/gila-small.webp" alt="Gila Monster in Red Cliffs Desert habitat" loading="lazy">
+        </picture>
+        
+        <!-- Overlay cards -->
+        <div class="overlay-content">
+            <!-- Data Section -->
+            <section class="data-card">
+                <h2>Data</h2>
+                <div class="data-items">
+                    <div class="data-item">
+                        <span class="label">Area:</span>
+                        <span class="value">45,000 acres</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Elevation:</span>
+                        <span class="value">2,860 ft</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Location:</span>
+                        <span class="value">Red Cliffs, UT</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Wildlife:</span>
+                        <span class="value">Gila Monster</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Discovered:</span>
+                        <span class="value">500 AD</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Climate:</span>
+                        <span class="value">Desert</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Weather Section -->
+            <section class="weather-card">
+                <h2>Weather 
+                    <img src="images/weather.svg" alt="Weather icon" class="weather-svg">
+                </h2>
+                <div class="weather-items">
+                    <div class="weather-item">
+                        <span class="label">Temperature:</span>
+                        <span class="value">72°F</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Conditions:</span>
+                        <span class="value">Sunny</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Wind:</span>
+                        <span class="value">5 km/h</span>
+                    </div>
+                    <div class="weather-item">
+                        <span class="label">Wind Chill:</span>
+                        <span class="value">22.3°C</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>©2024 🌵 Red Cliffs Desert Guide 🌵 Saint George, Utah</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,323 @@
+/* CSS Variables - Utah Desert Color Palette */
+:root {
+    --deep-red: #5a0505;
+    --rust-red: #a13a02;
+    --canyon-orange: #d64100;
+    --sunset-orange: #ff8621;
+    --desert-yellow: #feff67;
+    --light-sand: #f5f5dc;
+    --text-dark: #2c1810;
+    --text-light: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --shadow: rgba(90, 5, 5, 0.3);
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, var(--deep-red) 0%, var(--canyon-orange) 100%);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Hero Section with Background Image */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+/* Hero Background Image */
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Content Container - Below hero image on mobile */
+.overlay-content {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    background: var(--light-sand);
+    margin: 0;
+}
+
+/* Data Card */
+.data-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px var(--shadow);
+    border-top: 4px solid var(--canyon-orange);
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.data-card h2 {
+    background: var(--canyon-orange);
+    color: var(--text-light);
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Weather Card */
+.weather-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px var(--shadow);
+    border-top: 4px solid var(--canyon-orange);
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.weather-card h2 {
+    background: var(--canyon-orange);
+    color: var(--text-light);
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+
+/* Weather Icon - Default for wider view (emoji), override for mobile (SVG) */
+.weather-svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    display: none; /* Hidden by default (wider screens) */
+}
+
+/* Show pseudo-element emoji by default (wider screens) */
+.weather-card h2::after {
+    content: "☀️";
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+/* Data and Weather Items */
+.data-items,
+.weather-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.data-item,
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(214, 65, 0, 0.2);
+}
+
+.data-item:last-child,
+.weather-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.value {
+    font-weight: 500;
+    color: var(--rust-red);
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, var(--deep-red) 0%, var(--canyon-orange) 100%);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Media Queries */
+@media screen and (min-aspect-ratio: 2/3) {
+    header h1 {
+        font-size: 4rem;
+    }
+    
+    .hero-section {
+        height: 80vh;
+        min-height: 600px;
+    }
+    
+    .overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 3rem;
+        background: transparent;
+        align-content: start;
+    }
+    
+    .data-card {
+        backdrop-filter: blur(10px);
+        max-width: 350px;
+        justify-self: start;
+    }
+    
+    .weather-card {
+        backdrop-filter: blur(10px);
+        max-width: 350px;
+        justify-self: end;
+        align-self: start;
+        margin-top: 2rem;
+    }
+    
+    .data-card h2,
+    .weather-card h2 {
+        font-size: 1.6rem;
+    }
+    
+    .label,
+    .value {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .overlay-content {
+        padding: 4rem;
+    }
+    
+    .data-card,
+    .weather-card {
+        padding: 2rem;
+        max-width: 400px;
+    }
+    
+    .weather-card {
+        margin-top: 4rem;
+    }
+    
+    .label,
+    .value {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Adjustments - Very narrow/portrait screens */
+@media screen and (max-aspect-ratio: 2/3) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .overlay-content {
+        position: relative;
+        padding: 1rem;
+        gap: 1rem;
+        background: var(--light-sand);
+    }
+    
+    .data-card,
+    .weather-card {
+        backdrop-filter: none;
+        max-width: none;
+        width: 100%;
+        justify-self: center;
+        margin-top: 0;
+    }
+    
+    /* Show SVG and hide emoji on mobile/narrow screens */
+    .weather-svg {
+        display: inline-block;
+    }
+    
+    .weather-card h2::after {
+        display: none;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
