@@ -1,0 +1,126 @@
+/* Medium screens: 2-column layout using CSS Grid */
+@media (min-width: 500px) and (max-width: 999px) {
+    .temple-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    main {
+        padding: 2rem 1.5rem;
+    }
+    
+    main h1 {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+    
+    /* Keep hamburger menu for medium screens */
+    header {
+        padding: 1rem 1.5rem;
+    }
+    
+    /* Hamburger still visible on medium screens */
+    .menu-toggle {
+        display: flex !important;
+    }
+}
+
+/* Responsive design: When window is wide enough (1000px+) show horizontal nav and grid */
+@media (min-width: 1000px) {
+    /* Header adjustments for larger screens - use flex layout */
+    header {
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header h1 {
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+    
+    /* Show navigation horizontally on larger screens */
+    nav {
+        position: static !important;
+        background: none !important;
+        box-shadow: none !important;
+        min-width: auto !important;
+        border-radius: 0 !important;
+        max-height: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        overflow: visible !important;
+    }
+    
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    nav a {
+        flex: 1 1 100%;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        border-bottom: none;
+        text-align: center;
+    }
+    
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    nav ul li:last-child a {
+        border-radius: 4px;
+    }
+    
+    /* HIDE hamburger menu on larger screens - IMPORTANT */
+    .menu-toggle {
+        display: none !important;
+    }
+    
+    /* Main content adjustments */
+    main {
+        padding: 3rem 2rem;
+    }
+    
+    main h1 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+        font-weight: 500;
+    }
+    
+    /* CSS Grid layout for temple container - 3 columns */
+    .temple-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    /* Enhanced hover effects for desktop */
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Even larger screens */
+    header {
+        padding: 1.5rem 3rem;
+    }
+    
+    main {
+        padding: 4rem 3rem;
+        max-width: 1400px;
+    }
+    
+    figure img {
+        max-width: 350px;
+    }
+    
+    .temple-container {
+        gap: 2.5rem;
+    }
+}

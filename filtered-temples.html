@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive temple album showcasing beautiful LDS temples with interactive navigation and mobile-friendly design.">
+    <meta name="author" content="Tanner Livingston">
+    <title>Temple Album</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <nav>
+            <ul>
+                <li><a data-filter="home" class="active">Home</a></li>
+                <li><a data-filter="old">Old</a></li>
+                <li><a data-filter="new">New</a></li>
+                <li><a data-filter="large">Large</a></li>
+                <li><a data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu"></button>
+    </header>
+    
+    <main>
+        <h1>Home</h1>
+        
+        <div class="temple-container" id="temple-container">
+            <!-- Temple cards will be generated dynamically by JavaScript -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>© <span id="copyright-year"></span> 🐝 Tanner Livingston 🐝 Utah, USA.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
