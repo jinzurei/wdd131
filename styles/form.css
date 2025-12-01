@@ -1,0 +1,113 @@
+/* Main header styles */
+.form-header {
+  background: #FFD600;
+  color: #222;
+  padding: 1.5em 0;
+  text-align: center;
+}
+.form-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+/* Form container styles */
+.product-form {
+  background: #FFF9C4;
+  border-radius: 10px;
+  padding: 2em;
+  max-width: 500px;
+  margin: 2em auto 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-label, label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+
+.required {
+  color: #d32f2f;
+  font-weight: bold;
+}
+.optional {
+  color: #222;
+  font-size: 0.95em;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+  width: 100%;
+  padding: 0.75em;
+  font-size: 1.1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+}
+.rating-group input[type="radio"] {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.2em;
+}
+.rating-group label {
+  font-size: 1.5em;
+  margin: 0 0.2em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.features-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.features-group input[type="checkbox"] {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.features-group label {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: #FFD600;
+  color: #222;
+  border-radius: 6px;
+  border: none;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submit-btn:hover {
+  background: #FFC107;
+}
+
+.site {
+  background: #FFD600;
+  color: #222;
+  text-align: center;
+  padding: 1.5em 0;
+  margin-top: 2em;
+}
+.site p {
+  margin: 0;
+  font-size: 1.1em;
+}
