@@ -63,12 +63,6 @@ select, input[type="date"], input[type="text"], textarea {
   height: 2em;
   margin: 0 0.2em;
 }
-.rating-group label {
-  font-size: 1.5em;
-  margin: 0 0.2em;
-  cursor: pointer;
-  display: inline-block;
-}
 
 .features-group {
   display: flex;
@@ -80,10 +74,6 @@ select, input[type="date"], input[type="text"], textarea {
   height: 2em;
   vertical-align: middle;
   margin-right: 0.5em;
-}
-.features-group label {
-  display: inline-block;
-  margin-right: 1em;
 }
 
 .submit-btn {

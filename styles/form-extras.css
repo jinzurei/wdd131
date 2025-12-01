@@ -29,16 +29,6 @@ label {
 }
 
 
-.features-group label {
-  display: inline-block;
-  margin-right: 1em;
-}
-
-.rating-group label {
-  margin-right: 1em;
-  font-size: 1.5em;
-  cursor: pointer;
-}
 
 input[type="submit"] {
   background: #3498db;
