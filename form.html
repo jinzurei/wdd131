@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Review</title>
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/form.css">
+	<link rel="stylesheet" href="styles/form-extras.css">
+</head>
+<body>
+	<header style="background:#FFD600;color:#222;padding:1.5em 0;text-align:center;">
+		<h1 style="margin:0;font-size:2.5em;">Product Review</h1>
+	</header>
+	<main>
+		<form method="get" action="review.html" autocomplete="on" style="background:#FFF9C4;border-radius:10px;padding:2em;max-width:500px;margin:2em auto 0 auto;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+			<div style="margin-bottom:1.5em;">
+				<label for="productName" style="font-weight:bold;display:block;margin-bottom:0.5em;">Product Name</label>
+				<select id="productName" name="productName" required style="width:100%;padding:0.75em;font-size:1.1em;border-radius:4px;border:1px solid #ccc;">
+					<option value="" disabled selected>Choose a Product ...</option>
+				</select>
+			</div>
+			<div style="margin-bottom:1.5em;">
+				<label style="font-weight:bold;display:block;margin-bottom:0.5em;">Overall Rating</label>
+				<div style="display:flex;justify-content:space-between;max-width:350px;">
+					<div style="text-align:center;">
+						<span style="font-size:1.5em;">★</span><br>
+						<input type="radio" id="star1" name="rating" value="1" required style="width:2em;height:2em;">
+					</div>
+					<div style="text-align:center;">
+						<span style="font-size:1.5em;">★★</span><br>
+						<input type="radio" id="star2" name="rating" value="2" style="width:2em;height:2em;">
+					</div>
+					<div style="text-align:center;">
+						<span style="font-size:1.5em;">★★★</span><br>
+						<input type="radio" id="star3" name="rating" value="3" style="width:2em;height:2em;">
+					</div>
+					<div style="text-align:center;">
+						<span style="font-size:1.5em;">★★★★</span><br>
+						<input type="radio" id="star4" name="rating" value="4" style="width:2em;height:2em;">
+					</div>
+					<div style="text-align:center;">
+						<span style="font-size:1.5em;">★★★★★</span><br>
+						<input type="radio" id="star5" name="rating" value="5" style="width:2em;height:2em;">
+					</div>
+				</div>
+			</div>
+			<div style="margin-bottom:1.5em;">
+				<label for="installDate" style="font-weight:bold;display:block;margin-bottom:0.5em;">Date of Installation</label>
+				<input type="date" id="installDate" name="installDate" required style="width:100%;padding:0.75em;font-size:1.1em;border-radius:4px;border:1px solid #ccc;">
+			</div>
+			<div style="margin-bottom:1.5em;">
+				<label style="font-weight:bold;display:block;margin-bottom:0.5em;">Which features did you find useful in the product?<br><span style="font-style:italic;">(Check all that apply)</span></label>
+				<div style="display:flex;flex-direction:column;gap:0.5em;">
+					<label><input type="checkbox" id="feature1" name="features" value="Durability" style="width:2em;height:2em;vertical-align:middle;margin-right:0.5em;"> Durability</label>
+					<label><input type="checkbox" id="feature2" name="features" value="Ease of Use" style="width:2em;height:2em;vertical-align:middle;margin-right:0.5em;"> Ease of Use</label>
+					<label><input type="checkbox" id="feature3" name="features" value="Performance" style="width:2em;height:2em;vertical-align:middle;margin-right:0.5em;"> Performance</label>
+					<label><input type="checkbox" id="feature4" name="features" value="Design" style="width:2em;height:2em;vertical-align:middle;margin-right:0.5em;"> Design</label>
+				</div>
+			</div>
+			<div style="margin-bottom:1.5em;">
+				<label for="review" style="font-weight:bold;display:block;margin-bottom:0.5em;">Written Review <span style="color:#222;font-size:0.95em;">(Optional)</span></label>
+				<textarea id="review" name="review" rows="5" style="width:100%;padding:0.75em;font-size:1.1em;border-radius:4px;border:1px solid #ccc;"></textarea>
+			</div>
+			<div style="margin-bottom:1.5em;">
+				<label for="userName" style="font-weight:bold;display:block;margin-bottom:0.5em;">Your Name <span style="color:#222;font-size:0.95em;">(Optional)</span></label>
+				<input type="text" id="userName" name="userName" style="width:100%;padding:0.75em;font-size:1.1em;border-radius:4px;border:1px solid #ccc;">
+			</div>
+			<button type="submit" style="width:100%;padding:1em;font-size:1.3em;font-weight:bold;background:#FFD600;color:#222;border-radius:6px;border:none;margin-top:1em;cursor:pointer;">Post Review</button>
+		</form>
+	</main>
+	<footer class="site">
+		<p>© <span id="copyright-year"></span> 🐝 Tanner Livingston 🐝 Utah, USA.</p>
+		<p id="lastModified"></p>
+	</footer>
+	<script src="scripts/form.js"></script>
+	<script src="scripts/form-validation.js"></script>
+	<script src="scripts/form-enhancements.js"></script>
+	<script src="scripts/getdates.js"></script>
+</body>
+</html>
