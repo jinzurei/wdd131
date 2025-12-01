@@ -1,0 +1,71 @@
+
+/* form-extras.css: Extra styles for form.html */
+
+form {
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1.5em;
+  padding: 1em;
+}
+
+legend {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #34495e;
+}
+
+.features-group label {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.rating-group label {
+  margin-right: 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.75em 2em;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.2s;
+}
+input[type="submit"]:hover {
+  background: #217dbb;
+}
+
+.input-error {
+  border: 2px solid #e74c3c;
+  background-color: #fbeee6;
+}
+
+.input-focus {
+  outline: 2px solid #3498db;
+  background-color: #eaf6fb;
+}
+
+.form-success {
+  color: #27ae60;
+  font-weight: bold;
+  margin-top: 1em;
+}

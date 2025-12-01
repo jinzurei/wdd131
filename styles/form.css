@@ -25,6 +25,9 @@
   margin-bottom: 1.5em;
 }
 
+.italic-note {
+  font-style: italic;
+}
 .form-label, label {
   font-weight: bold;
   display: block;
