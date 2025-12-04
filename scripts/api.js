@@ -38,7 +38,7 @@ async function loadCommonPlants() {
     }
 
     try {
-        const response = await fetchWithTimeout('commonplants.csv');
+        const response = await fetchWithTimeout('../commonplants.csv');
         if (!response.ok) {
             throw new Error(`Failed to load CSV: ${response.status}`);
         }
