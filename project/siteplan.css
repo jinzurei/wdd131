@@ -1,0 +1,53 @@
+/* Siteplan styles */
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f8f8f3;
+    color: #2d3a24;
+}
+
+h1, h2, h3 {
+    color: #4C6B34;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.color-sample {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Color samples for specific colors */
+.color-sage-green {
+    background: #4C6B34;
+}
+
+.color-cream {
+    background: #F8F8F3;
+}
+
+.color-dark-green {
+    background: #2D3A24;
+}
+
+.wireframe-img {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+}

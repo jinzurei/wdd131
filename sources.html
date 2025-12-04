@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resources and acknowledgments for the Digital Herbarium project - APIs, fonts, icons, and attribution">
+    <meta name="author" content="Tanner Livingston">
+    <title>Sources - Digital Herbarium</title>
+    <link rel="stylesheet" href="styles/sources.css">
+</head>
+<body>
+    <a href="search.html" class="back-link">← Back to Home</a>
+    
+    <h1>Resources & Acknowledgments</h1>
+    
+    <h2>Project Concept</h2>
+    <p><strong>Idea:</strong> A dynamic and interactive "Digital Herbarium" focused on plants, inspired by a Pokédex from the Pokémon franchise.</p>
+    
+    <p><strong>Description:</strong> The website functions as a personal, searchable encyclopedia for a user's indoor plant collection. A user can search for a plant by its common name, which then triggers a backend process. The site fetches detailed botanical data from the Trefle.io API and displays it in a beautiful, informative "Plant Pokédex" card on the screen, complete with scientific name, family, and taxonomic information.</p>
+    
+    <p><strong>Reason for This Subject:</strong> I chose this subject because of my personal passion for plants and my own large collection at home. It merges a genuine interest with the project's technical requirements, allowing me to build something both useful and enjoyable. This idea provides an exciting opportunity to demonstrate mastery of modern web development skills, specifically the challenge of coordinating API integration to create a rich, seamless, and data-driven user experience.</p>
+    
+    <p><strong>Recommended Plant to Test:</strong> Try searching for <a href="search.html" class="bold-link">"Strawberry"</a> or <a href="search.html" class="bold-link">"Garden strawberry"</a> (<em>Fragaria × ananassa</em>) to see the full functionality of the Digital Herbarium in action!</p>
+    
+    <h2>APIs & Data Sources</h2>
+    <ul>
+        <li><strong>Trefle.io REST API</strong> - <a href="https://trefle.io" target="_blank">https://trefle.io</a> | <a href="https://github.com/treflehq/trefle-api" target="_blank">GitHub</a><br>
+        The comprehensive botanical database providing scientific and common plant names, family classifications, and taxonomic information for over 400,000 plant species worldwide.<br>
+        <em class="enhancement-note">Enhancement: Since Trefle.io primarily uses scientific names for accurate searches, I created a local CSV file (commonplants.csv) containing 50 commonly searched plants with their scientific name mappings. This allows users to search using familiar common names like "Snake Plant" or "Peace Lily," which are then automatically translated to their scientific names (e.g., "Dracaena trifasciata") before querying the API. When a match is found, a "Did you mean" suggestion appears at the top of search results, improving the user experience for non-experts while maintaining search accuracy.</em></li>
+        
+        <li><strong>Pixabay API</strong> - <a href="https://pixabay.com/api/docs/" target="_blank">https://pixabay.com/api/docs/</a><br>
+        Used as a fallback image source when Trefle.io does not provide a plant image. Pixabay provides royalty-free images under the Pixabay License.<br>
+        <em class="note-text">Note: To properly credit the image source, I added a "Fetched by Pixabay" label that appears in the bottom-left corner of any image sourced from Pixabay, making attribution clear and visible to users.</em></li>
+    </ul>
+    
+    <h2>Fonts</h2>
+    <ul>
+        <li><strong>Google Fonts</strong> - <a href="https://fonts.google.com" target="_blank">https://fonts.google.com</a><br>
+        Fredericka the Great, Roboto, and Montserrat font families for enhanced typography and readability.<br>
+        <a href="https://fonts.google.com/specimen/Fredericka+the+Great" target="_blank">Fredericka the Great</a></li>
+    </ul>
+    
+    <h2>Icons</h2>
+    <ul>
+        <li><strong>Bootstrap Icons</strong> - <a href="https://icons.getbootstrap.com" target="_blank">https://icons.getbootstrap.com</a><br>
+        SVG icons including binoculars and trash icons, licensed under MIT.</li>
+    </ul>
+    
+    <h2>UI Components</h2>
+    <ul>
+        <li><strong>CSS Loaders by Vineeth TR</strong> - <a href="https://cssloaders.github.io" target="_blank">https://cssloaders.github.io</a> | <a href="https://github.com/vineethtrv" target="_blank">GitHub</a><br>
+        Beautiful landscape-style CSS loading animation used on the result page. Created by <a href="https://github.com/vineethtrv" target="_blank">Vineeth TR</a> and adapted to match the Digital Herbarium color scheme.</li>
+    </ul>
+    
+    <h2>Documentation</h2>
+    <ul>
+        <li><strong>Mozilla Developer Network (MDN)</strong> - <a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a><br>
+        Comprehensive documentation for web standards and APIs.</li>
+        
+        <li><strong>WDD 131 - Dynamic Web Fundamentals</strong> - <a href="https://byui-cse.github.io/wdd131-ww-course" target="_blank">https://byui-cse.github.io/wdd131-ww-course</a><br>
+        Brigham Young University - Idaho course providing foundational instruction in dynamic web development, including HTML, CSS, JavaScript, DOM manipulation, API integration, and responsive design principles. Course materials and documentation were essential references throughout this project's development.</li>
+    </ul>
+    
+    <h2>Media</h2>
+    <ul>
+        <li><strong>Digital Herbarium Logo</strong> - Original artwork by Savanna R.<br>
+        Custom hand-drawn illustration of a potted plant, created specifically for this project. Special thanks to Savanna for contributing her artistic talent to bring the Digital Herbarium brand to life.</li>
+        <li><strong>Tree B-roll Video</strong> - <a href="https://pixabay.com/videos/trees-tree-tops-forest-branches-211333/" target="_blank">Pixabay</a><br>
+        Forest tree tops video used in hero section, licensed under Pixabay License.</li>
+        <li><strong>Forest B-roll Video</strong> - <a href="https://pixabay.com/videos/jungle-forest-caribbean-guadeloupe-234735/" target="_blank">Pixabay</a><br>
+        Jungle/forest video used in contact section background, licensed under Pixabay License.</li>
+        <li><strong>Wildflowers Image</strong> - <a href="https://pixabay.com/photos/daisies-meadow-wildflowers-flowers-3430133/" target="_blank">Pixabay</a><br>
+        Daisies and wildflowers meadow photograph, licensed under Pixabay License.</li>
+        <li><strong>Strawberry Image</strong> - <a href="https://pixabay.com/photos/strawberry-wild-strawberry-nature-3501491/" target="_blank">Pixabay</a><br>
+        Wild strawberry nature photograph, licensed under Pixabay License.</li>
+    </ul>
+    
+    <h2>Hosting</h2>
+    <ul>
+        <li><strong>GitHub Pages</strong> - <a href="https://github.com" target="_blank">https://github.com</a><br>
+        Version control, project hosting, and website deployment.</li>
+    </ul>
+    
+    <p class="acknowledgment">
+        This project was created as a final assignment for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.
+    </p>
+</body>
+</html>

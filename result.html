@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plant details and information from the Digital Herbarium">
+    <meta name="author" content="Tanner Livingston">
+    <title>Plant Details - Digital Herbarium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/result.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    
+    <nav id="nav">
+        <button class="close-nav" id="close-nav">&times;</button>
+        <ul>
+            <li><a href="search.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="result-container">
+            <div id="plant-details">
+                <!-- Loading/Error containers -->
+                <div id="loading-container">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-text">Loading plant details...</p>
+                </div>
+                <div id="error-container">
+                    <div class="error-icon">🌱</div>
+                    <h2 id="error-message">Plant not found</h2>
+                    <p>Please return to the search page and try again.</p>
+                    <a href="search.html" class="back-button">← Back to Search</a>
+                </div>
+                <!-- Main Plant Details -->
+                <div id="plant-main">
+                    <!-- Hero -->
+                    <div class="hero">
+                        <div class="hero-info">
+                            <h1 id="plant-common-name">Plant Name</h1>
+                            <p class="sci-name" id="plant-sci-name"><em>Scientific Name</em></p>
+                            <div class="tags" id="plant-tags"></div>
+                        </div>
+                        <div class="hero-img-wrap">
+                            <img src="" alt="Plant" class="hero-img" id="plant-img">
+                            <span class="img-credit" id="img-credit"></span>
+                            <div class="no-img" id="no-img">🌿</div>
+                        </div>
+                    </div>
+                    <!-- Tabs -->
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="about">About</button>
+                        <button class="tab-btn" data-tab="growing">Growing & Specs</button>
+                        <button class="tab-btn" data-tab="images">Images</button>
+                    </div>
+                    <div class="tabs-wrapper">
+                        <!-- About Tab -->
+                        <div id="tab-about" class="tab-content active">
+                            <div class="card">
+                                <h3>Basic Info</h3>
+                                <div class="info-list" id="basic-info-list"></div>
+                            </div>
+                            <div class="card" id="obs-dist-card">
+                                <h3>Observations & Distribution</h3>
+                                <p class="obs" id="plant-observations"></p>
+                                <div id="plant-distribution"></div>
+                            </div>
+                            <div class="card" id="synonyms-card">
+                                <h3>Synonyms</h3>
+                                <div class="syn-list" id="plant-synonyms"></div>
+                            </div>
+                        </div>
+                        <!-- Growing & Specs Tab -->
+                        <div id="tab-growing" class="tab-content">
+                            <div class="card">
+                                <h3>Light & Water</h3>
+                                <div id="light-water-rows"></div>
+                            </div>
+                            <div class="card">
+                                <h3>Soil</h3>
+                                <div id="soil-rows"></div>
+                                <div class="info-row ph" id="ph-row"></div>
+                            </div>
+                            <div class="card">
+                                <h3>Size & Growth</h3>
+                                <div class="specs-grid" id="specs-grid"></div>
+                            </div>
+                            <div class="card" id="calendar-card">
+                                <h3>Calendar</h3>
+                                <div id="calendar-rows"></div>
+                            </div>
+                            <div class="card" id="temp-card">
+                                <h3>Temperature</h3>
+                                <div class="info-list" id="temp-list"></div>
+                            </div>
+                        </div>
+                        <!-- Images Tab -->
+                        <div id="tab-images" class="tab-content">
+                            <div class="card">
+                                <h3>Photo Gallery</h3>
+                                <div id="gallery-container"><p class="loading-text">Loading images...</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-bottom">
+                        <a href="search.html" class="back-button">← Back to Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Lightbox for Image Gallery -->
+    <div id="lightbox" class="lightbox">
+        <img src="" alt="Full size plant image" id="lightbox-img">
+    </div>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Tanner Livingston | WDD 131 Final Project | <a href="sources.html">Sources</a></p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/result.js"></script>
+</body>
+</html>

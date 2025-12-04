@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About the Digital Herbarium - A dynamic plant encyclopedia inspired by the Pokédex">
+    <meta name="author" content="Tanner Livingston">
+    <title>About - Digital Herbarium</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body class="about-page">
+    <!-- Video Hero Section -->
+    <section class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="images/treebroll.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1>IT'S TIME TO<br>KNOW US</h1>
+        </div>
+    </section>
+
+    <header>
+        <div class="logo-space"><!-- Logo will go here --></div>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    
+    <nav id="nav">
+        <button class="close-nav" id="close-nav">&times;</button>
+        <ul>
+            <li><a href="search.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article class="about-content">
+            <section class="about-intro">
+                <h2>IN LOVE WITH PLANTS</h2>
+                <p>We are passionate about making botanical knowledge accessible to everyone. Digital Herbarium is an interactive web application inspired by the Pokédex from the Pokemon Franchise, bringing the botanical world to your fingertips. Whether you're a student, gardener, or nature enthusiast, this tool provides a modern way to discover and catalog plants with real-time data.</p>
+            </section>
+
+            <section class="features-grid">
+                <div class="feature-card">
+                    <img src="images/wildflowers.webp" alt="Wildflowers in nature" loading="lazy">
+                    <div class="feature-content">
+                        <h3>Our Mission</h3>
+                        <p>Making botanical knowledge accessible through intuitive search and comprehensive plant information from around the world.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="images/strawberry.webp" alt="Fresh strawberries" loading="lazy">
+                    <div class="feature-content">
+                        <h3>How It Works</h3>
+                        <p>Built with HTML5, CSS3, and JavaScript, leveraging the Trefle.io API for comprehensive botanical data on over 400,000 plant species.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sources">
+                <h2>Resources & Acknowledgments</h2>
+                
+                <div class="trefle-featured">
+                    <a href="https://trefle.io" target="_blank" rel="noopener noreferrer" class="trefle-link">
+                        <img src="images/treflelogo.svg" alt="Trefle.io" class="trefle-logo">
+                        <h3>Powered by Trefle.io</h3>
+                        <p>The comprehensive botanical database at the heart of Digital Herbarium. Trefle provides scientific and common plant names, family classifications, and taxonomic information for over 400,000 plant species worldwide.</p>
+                    </a>
+                </div>
+
+                <div class="resources-grid">
+                    <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" class="resource-card">
+                        <strong>Google Fonts</strong>
+                        <p>Fredericka the Great, Roboto, and Montserrat font families for enhanced typography and readability.</p>
+                    </a>
+                    <a href="https://icons.getbootstrap.com" target="_blank" rel="noopener noreferrer" class="resource-card">
+                        <strong>Bootstrap Icons</strong>
+                        <p>SVG icons including binoculars and trash icons, licensed under MIT.</p>
+                    </a>
+                    <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer" class="resource-card">
+                        <strong>Pixabay</strong>
+                        <p>Free stock video footage and photography, licensed under Pixabay License.</p>
+                    </a>
+                </div>
+                
+                <p class="acknowledgment">This project was created as a final assignment for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.</p>
+            </section>
+
+            <section class="contact">
+                <video class="contact-video" autoplay muted loop playsinline>
+                    <source src="images/forestbroll.mp4" type="video/mp4">
+                </video>
+                <div class="contact-overlay">
+                    <h2>Get In Touch</h2>
+                    
+                    <div class="contact-cards">
+                <div class="contact-card">
+                    <h3>Send a Message</h3>
+                    <p>Have any questions or want to learn more about this project?</p>
+                    
+                    <form class="contact-form" id="contact-form" method="post" action="#">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required minlength="2">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Contribute</h3>
+                    <p>Want to collaborate & assist on this endeavour?</p>
+                    
+                    <div class="contribution-info">
+                        <div class="contrib-item">
+                            <strong>🌱 Plant Data</strong>
+                            <p>Help with descriptions</p>
+                        </div>
+                        <div class="contrib-item">
+                            <strong>💻 Development</strong>
+                            <p>Code contributions</p>
+                        </div>
+                        <div class="contrib-item">
+                            <strong>📸 Photography</strong>
+                            <p>Share plant photos</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://github.com/jinzurei" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                        <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+                </div>
+        </div>
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span> | Tanner Livingston | WDD 131 Final Project | <a href="sources.html">Sources</a></p>
+            <p id="lastModified"></p>
+        </footer>
+    </section>
+        </article>
+    </main>
+    
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/about.js"></script>
+</body>
+</html>

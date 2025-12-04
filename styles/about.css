@@ -1,0 +1,510 @@
+/* About Page Styles */
+
+/* Override main layout for about page */
+.about-page main {
+    padding: 0;
+    margin: 0;
+}
+
+.about-page {
+    margin: 0;
+    padding: 0;
+}
+
+.about-page footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: transparent;
+}
+
+
+/* Video Hero Section */
+.hero-video {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(40, 52, 28, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay h1 {
+    color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 1rem;
+}
+
+/* Position header over video */
+.about-page header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: transparent;
+}
+
+.about-page .hamburger span {
+    background-color: var(--cream);
+}
+
+/* About Content */
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem 0;
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about-intro h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark-green);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--medium-green);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(112, 78, 78, 0.1);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.feature-content {
+    padding: 2rem;
+}
+
+.feature-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--medium-green);
+}
+
+/* Sources Section */
+.sources {
+    background: var(--dark-green);
+    color: var(--cream);
+    padding: 4rem 2rem 4rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sources h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Trefle Featured Section */
+.trefle-featured {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    background: rgba(77, 92, 60, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.trefle-link {
+    display: block;
+    padding: 3rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cream);
+    transition: all 0.3s ease;
+}
+
+.trefle-link:hover {
+    background: rgba(77, 92, 60, 0.8);
+    transform: translateY(-2px);
+}
+
+.trefle-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+.trefle-link h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--cream);
+}
+
+.trefle-link p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Resources Grid */
+.resources-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+}
+
+.resource-card {
+    background: rgba(77, 92, 60, 0.4);
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cream);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+    background: rgba(77, 92, 60, 0.6);
+    transform: translateX(5px);
+}
+
+.resource-card strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.resource-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.acknowledgment {
+    text-align: center;
+    font-style: italic;
+    max-width: 700px;
+    margin: 2rem auto 0;
+    line-height: 1.6;
+}
+
+/* Contact Section - Full Width Video Background */
+.contact {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-top: 0;
+    margin-bottom: -100px;
+    padding: 4rem 2rem calc(4rem + 100px);
+    overflow: hidden;
+    min-height: 700px;
+}
+
+.contact-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contact-overlay {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--cream);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Contact Cards Grid */
+.contact-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.contact-card {
+    background: rgba(247, 238, 229, 0.98);
+    padding: 2.5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(77, 92, 60, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: var(--dark-green);
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.contact-card > p {
+    color: var(--medium-green);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--dark-green);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--sage-green);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background: white;
+    color: var(--dark-green);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--dark-green);
+}
+
+.form-group textarea {
+    resize: none;
+    min-height: 160px;
+}
+
+/* Send Message button: darker by default, square corners */
+button.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    background: #243017; /* was hover color; now default */
+    color: var(--cream);
+    border: none;
+    padding: 1rem;
+    border-radius: 6px; /* more square */
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto; /* anchor to bottom within the card */
+}
+
+button.submit-btn:hover {
+    background: #3a5026; /* lighter on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Contribution Info */
+.contribution-info {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contrib-item {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem .5rem;
+    background: white;
+    border-radius: 10px;
+    border-left: 5px solid var(--sage-green);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contrib-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contrib-item:last-child {
+    margin-bottom: 0;
+}
+
+.contrib-item strong {
+    display: block;
+    font-size: 1.15rem;
+    color: var(--dark-green);
+    margin-bottom: 0.5rem;
+}
+
+.contrib-item p {
+    color: var(--medium-green);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    background: var(--dark-green);
+    color: var(--cream);
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: var(--medium-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure GitHub button also anchors to bottom of its card */
+.contact-card > .contact-btn {
+    margin-top: auto;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .hero-video {
+        height: 70vh;
+    }
+
+    .hero-overlay h1 {
+        font-size: 4rem;
+    }
+
+    .about-intro h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact h2 {
+        font-size: 3.5rem;
+    }
+
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-card {
+        flex-direction: row;
+    }
+
+    .feature-card img {
+        width: 50%;
+        height: auto;
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .hero-video {
+        height: 80vh;
+    }
+
+    .hero-overlay h1 {
+        font-size: 6rem;
+    }
+
+    .about-content {
+        padding: 6rem 2rem;
+    }
+}
+
