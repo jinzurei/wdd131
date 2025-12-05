@@ -1,6 +1,6 @@
 // Set copyright year and last modified date in the footer
 document.addEventListener('DOMContentLoaded', function () {
-  var yearSpan = document.getElementById('copyright-year');
+  var yearSpan = document.getElementById('currentyear');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }

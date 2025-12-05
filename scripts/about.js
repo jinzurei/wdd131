@@ -36,10 +36,18 @@ if (contactForm) {
         submissions.push(submission);
         localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
         
-        // Show success message
-        alert(`Thank you, ${name}! Your message has been received. We'll get back to you at ${email} soon.`);
+        // Show success message in DOM
+        const successMsg = document.createElement('div');
+        successMsg.className = 'success-message';
+        successMsg.textContent = `Thank you, ${name}! Your message has been received. We'll get back to you at ${email} soon.`;
+        successMsg.style.cssText = 'background: #4CAF50; color: white; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
         
-        // Reset form
-        contactForm.reset();
+        contactForm.appendChild(successMsg);
+        
+        // Reset form after delay
+        setTimeout(() => {
+            contactForm.reset();
+            successMsg.remove();
+        }, 5000);
     });
 }

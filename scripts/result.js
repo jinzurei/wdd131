@@ -14,6 +14,14 @@ const MONTH_FULL = ['january', 'february', 'march', 'april', 'may', 'june', 'jul
 const LOADING_MESSAGES = [
     'Watching the grass grow...',
     'Waiting for seeds to sprout...',
+    'Waiting for water to soak in...',
+    'Checking the soil quality...',
+    'Photosynthesizing data...',
+    'Tending to the digital garden...',
+    'Cultivating plant info...',
+    'Nurturing your plant profile...',
+    'Sprouting new details...',
+    'Harvesting plant data...',
     'Letting the roots take hold...'
 ];
 
