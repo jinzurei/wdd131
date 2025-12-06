@@ -78,16 +78,20 @@
 
 /* About Content */
 .about-page main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem 0;
+    margin: 0;
+    padding: 0;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .about-intro {
     text-align: center;
     margin-bottom: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1rem 0;
 }
 
 .about-intro h2 {
@@ -114,6 +118,10 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
 }
 
 .feature-card {
@@ -164,6 +172,9 @@
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Trefle Featured Section */
@@ -279,7 +290,9 @@
     position: relative;
     z-index: 2;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .contact h2 {
@@ -296,6 +309,9 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact-card {
